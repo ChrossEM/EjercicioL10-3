@@ -2,7 +2,7 @@ public enum Color {
     ROJO("Rojo"),
     AMARILLO("Amarillo"),
     AZUL("Azul"),
-    BLANCO("Blaco"),
+    BLANCO("Blanco"),
     GRIS("Gris"),
     NARANJA("Naranja");
 

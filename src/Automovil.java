@@ -245,6 +245,8 @@ public class Automovil implements Comparable<Automovil>{
                 '}';
     }
 
+    
+
     @Override
     public int compareTo(Automovil o) {
         return this.fabricante.compareTo(o.fabricante);
