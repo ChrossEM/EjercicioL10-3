@@ -1,8 +1,3 @@
-import javax.sound.sampled.AudioFileFormat;
-import java.sql.PseudoColumnUsage;
-import java.util.Arrays;
-import java.util.Objects;
-
 public class EjemploAutomovilArreglo {
     public static void main(String[] args) {
 
