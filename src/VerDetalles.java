@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class VerDetalles {
     public static void imprimirObjetos(Automovil[] autos) {
         for (Automovil a : autos) {
@@ -11,15 +9,14 @@ public class VerDetalles {
                 System.out.println(" " + (a.getColor() != null ? a.getColor() : "N/A"));
 
                 if (a.getMotor() != null) {
-                    System.out.print("Tipo de motor: " + Objects.toString(a.getMotor().getTipo(), "N/A"));
-                    System.out.print(", Cilindraje: " + Objects.toString(a.getMotor().getCilindraje(), "N/A"));
+                    System.out.print("Tipo de motor: " + (a.getMotor().getTipo() != null ? a.getMotor().getTipo() : "N/A"));
+                    System.out.print(", Cilindraje: " + (a.getMotor().getCilindraje() != 0.0d ? a.getMotor().getCilindraje() : "N/A"));
                 } else {
                     System.out.print("Tipo de motor: N/A, Cilindraje: N/A");
                 }
 
                 if (a.getEstanque() != null) {
-                    System.out.print(" Capacidad de estanque: "
-                            + Objects.toString(a.getEstanque().getCapacidad(), "N/A") + "\n");
+                    System.out.print(" Capacidad de estanque: " + (a.getEstanque().getCapacidad() != 0 ? a.getEstanque().getCapacidad() : "N/A") + "\n");
                 } else {
                     System.out.println(" Capacidad de estanque: N/A");
                 }
